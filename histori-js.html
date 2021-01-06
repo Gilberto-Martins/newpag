@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="introCss.css">
+    <title>Historia do JS</title>
+</head>
+
+<body>
+    <header>
+        <h2>Intro a Javascript ES6 essencial</h2>
+    </header>
+    <section>
+        <div class="historia">
+            <div>
+                <p>
+                    O javaScript foi lançado em setembro de 1995, com o nome de moca, depois passo a ser linescript e
+                    por fim de javaScript(pela fama do java). <br>
+                    Foi criado por Brendan Eich. <br>
+                </p>
+
+                <p>
+                <h3>ECMAScript</h3>
+                É uma especificação da linguagem de programação padronizada, servindo como base futuras implementaçoes
+                de outras linquagens Scripts. <br> ECMAScript é uma especificação de linguagem script criada pela Ecma
+                International, utilizada por linguagens como: ActionScript, JScript e Javascript.
+                Quem cuida do projeto do ECMAScript é o TC39, é o comiter responsavel pelo javaScript.
+                </p>
+
+                Stage 0: strawman, Stage 1: proposal, Stage 2: draft, Stage 3: candidate e Stage 4: finished
+
+                <p>
+                <h3>Coneitos da Lingagem</h3>
+                linguagem interpretada(complidado), o codigo é executado de cima para baixo e o resultado da execução é
+                imediatamente retornado. <br>
+                </p>
+
+                <p>
+                <h3>Limguagem de tipagem fraca e dinâmica</h3>
+                tipagem fraca quer dizer que não a verificações em todas as operações no JavaScript. <br> <br>
+                Agora na tipagem dinamica, não precisa especificar o tipo de variavel no momento de sua criação,
+                </p>
+
+                <p>
+                <h3>Função de primeira classe e ordem mairo</h3>
+                Função de primeira classe quer dizer que a função pode ser atribuida a uma variavel, a uma estrutura de
+                dados seja um object ou um Array e podem ser passadas por argumentos e ate retorna em outras funções.
+                <br>
+                </p>
+
+                <p>
+                <h3>Clouser</h3>
+                Tambem conhecido como escopo leve, é a capacidade de uma função lembra do ambiemte em que ela fi criada
+                </p>
+
+                <p>
+                <h3>Currying</h3>
+                é a tecnica de transforma uma função com n paramentros em apenas uma que recebe um paramentro e para
+                cada parametro vai retornando um função. <br> <br>
+                ex: funcion soma(a){ <br>
+                return funcion(b){ <br>
+                return a + b <br>
+                } <br>
+                } <br>
+                </p>
+
+                <p>
+                <h3>Hoisting</h3>
+                caso você faça uma chamada de uma variavel que ainda n existe, não ira dar erro, ira dar undefat, se
+                você chamar essa mesma variavem depois de atribuir um valor era mostra seu valor. <br>
+                ja com funcões é o mesmo
+                </p>
+
+                <p>
+                <h3>imutabilidade</h3>
+                em kinguagens funcionais os dados nunca mudam, se você precissa muda-la voce vai criar uma novo
+                </p>
+            </div>
+        </div>
+
+        <div class="Variaveis">
+
+            <div id="tipos">
+                <h3>tipos</h3>
+                <p>
+                    O javascript tem 6 tipos de variaveis, String, number, boolean, null ,undefined(não definido) e
+                    symbol(crai valores unicos). <br> tambem temos Object, Function e Array. <br>
+                </p>
+                <p>
+
+                </p>
+            </div>
+
+            <div id="Var">
+                <h4>Var</h4>
+                <p>
+                    Não respeita o escopo de bloco
+                </p>
+            </div>
+
+            <div id="let">
+                <h4></h4>
+                <p>
+                    Respeita o escopo de bloco
+                </p>
+            </div>
+
+            <div id="const">
+                <h4></h4>
+                <p>
+                    respeita o escopo de bloco
+                </p>
+            </div>
+        </div>
+
+        <div class="Operadores">
+            <div>
+                <h4>Funçoes</h4>
+                temos uma nova forma de criar uma funcion: <strong>arronwNomeDaFunção</strong> <br>
+                ex= <strong>const arrowFn = () => 'Code hero';</strong> <br>
+                obs: o => 'Code hero'; é o return implicito, se for so um return, caso tenha mais de um tem que ser
+                explicito <br>
+
+                <p>
+                    Operador binario: <br>
+                    operando1 opeador operando2: 1 + 2 <br>
+                    <br>
+                    Operador unario: <br>
+                    operando1 operando2
+                    operando2 operando1
+
+                    <br> <br>
+                    x++ <br>
+                    ++x
+
+                    <br> <br>
+
+                    Condicional ternario: <br>
+                    condicao ? valor1 : valor2 <br>
+
+                    true ? 'foo' : 'bar' //retorna 'foo' <br>
+                    false ? 'foo' : 'bar' //retorna 'barr'<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="Estruturas">
+            <div>
+                <h3>if, else e else if</h3>
+                <p>
+                    if(condição){ <br>
+                    <br>
+                    } <br> <br>
+
+                    if(condição){<br> <br>
+
+                    }else{ <br> <br>
+
+                    } <br> <br>
+
+                    if(condição){ <br> <br>
+
+                    } else if(condição){ <br> <br>
+
+                    }else{ <br> <br>
+
+                    } <br> <br>
+
+                    switch (expreção){ <br>
+                    case valor1: <br>
+                    breack; <br> <br>
+                    case valo2: <br>
+                    breack; <br> <br>
+                    default: <br>
+                    breack; <br>
+                    }
+                </p>
+
+            </div>
+
+            <div>
+                <h3>repetição</h3>
+                Temos: For, while do while e for in <br> <br>
+                For: for(let i = 0;i<=10;i++){ <br>
+                    console.log(i); <br>
+                    } <br> <br>
+                    while (condição){ <br>
+                    console.log('Ola'); <br>
+                    i++; <br>
+                    } <br> <br>
+
+                    do{ <br>
+                    console.log('ola'); <br>
+                    i++; <br>
+                    }while(condição) <br>
+
+                    <h3>o for in é especifico para array</h3>
+                    <p>
+                        o for in vai execitar o bloco de comando para cada propriedade do array isso é os elementos do
+                        array. <br>
+                        EX: <strong>
+                            let arr = [3,5,7]; <br>
+                            arr.foo = "hello"; <br> <br>
+
+                            for(let i in arr){ <br>
+                            console.log(i); <br>
+                            } <br> <br>
+
+                            for(let i of arr){ so executa pripriedades enumeradas <br>
+                            console.log(i) <br>
+                            } <br>
+                        </strong>
+                    </p>
+            </div>
+            <div>
+                <h3>spread</h3>
+                <p>
+                    permite passa arrays como parametro e tambem passar arrays dentro de outos arrays. <br>
+                    <br>
+                    EX: <strong>
+                        var partes = ['ombro','joelho']; <br>
+                        var musica = ['cabeça', ...partes, 'e', 'pés']; <br> <br>
+                        ísso é o mesmo que : var musica = ['cabeça','ombro','joelho', 'e', 'pés']; <br> <br>
+
+                        funcion fn(x,y,z){} <br>
+                        var args = [0,1,2]; <br>
+                        fn(...args); é o mesmo que: fn(0,1,2);
+                    </strong>
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+</body>
+
+</html>
